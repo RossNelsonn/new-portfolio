@@ -129,6 +129,7 @@ nav {
   font-weight: bold;
   background-color: #fff;
   font-size: 1.1em;
+  -webkit-animation-delay: .3s;
 }
 
 nav ul {
