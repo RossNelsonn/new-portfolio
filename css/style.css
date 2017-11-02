@@ -1,0 +1,413 @@
+
+/*--CSS RESET--*/
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666;
+}
+
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /*
+    fixed = parallax
+    scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+
+.pimg1{
+    background-image: url('../img/banner1.png');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-color: #afdacd;
+    min-height: 400px;
+}
+
+.pimg3{
+    background-color: #afdacd;
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color:#fff;
+    color: #666;
+}
+
+
+
+.section-dark{
+    background-color:#282e34;
+    color:#ddd;
+}
+
+.ptext{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color:#000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase; 
+    font-family: 'Loved by the King', cursive;
+}
+
+.ptext1{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color:#000;
+    font-size: 90px;
+    letter-spacing: 8px;
+    font-family: 'Loved by the King', cursive;
+    color: #fff;
+    
+}
+
+.ptext2{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color:#000;
+    font-size: 90px;
+    letter-spacing: 8px;
+    font-family: 'Loved by the King', cursive;
+    color: #fff;
+    
+}
+
+
+
+
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
+
+
+/*--NAV--*/
+
+nav {
+  padding: 1em 0;
+  margin-bottom: 3em;
+  font-family: 'Khula', sans-serif;
+  font-weight: bold;
+  background-color: #fff;
+  font-size: 1.1em;
+}
+
+nav ul {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul li {
+  padding-top: 10px;
+  padding-left: 20px;
+  display: inline;
+  margin: 10px;
+  float: left;
+}
+
+nav a:hover {
+  border-bottom: none;
+  color: #D3D3D3;
+}
+
+.logo {
+    float: right;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    padding-top: 1em;
+}
+
+.res-nav {
+    float: right;
+    color: #fff;
+    padding: 15px;
+    overflow: hidden;
+}
+
+/*--links--*/
+
+a {
+  color: #282e34;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  border-bottom: 1px;
+}
+
+/*--gallery--*/
+
+
+
+.xop-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+ 
+.xop-grid:after {
+	clear: both;
+}
+ 
+.xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
+}
+ 
+
+
+
+.xop-grid li {
+	width: 375px;
+	height: 375px;
+	display: inline-block;
+	margin: 20px;
+}
+ 
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+ 
+.xop-box:hover {
+	transform: scale(1.05); 
+}
+
+
+.xop-img-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../img/jcole.png) center center;
+    background-size: 400px;
+}
+
+.xop-info {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #424242;
+}
+
+.xop-info:hover{
+    opacity: .9;
+}
+
+
+.xop-img-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../img/travelapp.jpg) center center;
+    background-size: 500px;
+}
+ 
+
+.xop-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../img/pawpaths.jpg) center center;
+    background-size: 500px;
+    
+}
+
+
+.xop-img-4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../img/card.jpg) center center;
+    background-size: 600px;
+}
+
+
+.xop-info h3 {
+	font-family: 'Khula', sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 42px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.5;
+}
+ 
+.xop-info p {
+	font-family: 'Khula', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 14px;
+	line-height: 2;
+}
+
+
+/*-- TYPOGRAPHY--*/
+
+footer {
+  background-color: #1a1a1a;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+.icons{
+  padding-left: 35em;
+}
+
+.icons img {
+    display: inline-block;
+}
+
+.icons img:hover{ opacity: 1;
+transform: scale(1.1);
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  font-family: 'Khula', sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #afdacd;
+}
+
+h1 {font-size: 4em;
+  margin-bottom: .1em;
+  margin-top: 1em;
+}
+
+h2 {font-size: 2em;
+  margin-bottom: 1em;
+}
+
+
+.container {
+    text-align: left;
+    max-width: 70%;
+    margin: auto;
+}
+
+#title {
+  font-weight: normal;
+  color: #282e34;
+  text-align: center;
+  font-family: 'Khula', sans-serif; 
+  text-transform: uppercase;
+}
+
+#about {
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  font-family: 'Khula', sans-serif;
+  text-transform: uppercase;
+}
+
+
+/*--images--*/
+
+.brief {
+    display: inline-block;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 100%;
+}
+
+.result {
+    display: inline-block;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 100%;
+    padding-left: 6em;
+}
+
+.n {
+    display: inline-block;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 100%;
+    padding-left: 240px;
+    
+}
+
+
+.top-image1{
+    background-image: url('../img/card2.jpg');
+    min-height: 400px;
+     position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.top-image2{
+    background-image: url('../img/pawpaths1.jpg');
+    min-height: 400px;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.top-image3{
+    background-image: url('../img/travelapp2.jpg');
+    min-height: 400px;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
